@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colour Prediction Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="balance">
+        Available balance: ₹ <span id="balance">38446.50</span>
+        <button onclick="recharge()">Recharge</button>
+        <button onclick="readRule()">Read Rule</button>
+    </div>
+    <div class="game">
+        <div class="timer">Count Down: <span id="countdown">02:08</span></div>
+        <div class="buttons">
+            <button onclick="join('green')">Join Green</button>
+            <button onclick="join('violet')">Join Violet</button>
+            <button onclick="join('red')">Join Red</button>
+        </div>
+        <div class="numbers">
+            <button>0</button> <button>1</button> <button>2</button> <button>3</button> <button>4</button>
+            <button>5</button> <button>6</button> <button>7</button> <button>8</button> <button>9</button>
+        </div>
+    </div>
+    <div class="history">
+        <h3>Parity Record</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Period</th>
+                    <th>Price</th>
+                    <th>Number</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody id="history">
+                <!-- History will be dynamically populated here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

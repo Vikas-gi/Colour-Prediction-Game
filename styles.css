@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+.balance {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+}
+.buttons {
+    margin-top: 20px;
+}
+.buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.numbers button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+}
+.history {
+    margin-top: 20px;
+}
+.history table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.history th, .history td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
